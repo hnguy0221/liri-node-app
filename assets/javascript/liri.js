@@ -32,13 +32,12 @@ switch (commandType)
 
 function procMyTweets()
 {
-    var listOfKeys = twitterKeysObj.twitterKeys;
-
     var consumerKey = "";
     var consumerSecret = "";
     var accessTokenKey = "";
     var accessTokenSecret = "";
 
+    var listOfKeys = twitterKeysObj.twitterKeys;
     for (var key in listOfKeys)
     {
         switch (key)
