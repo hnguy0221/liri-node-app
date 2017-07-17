@@ -7,12 +7,11 @@ var Spotify = require("node-spotify-api");
 var commandType = process.argv[2];
 if (commandType === undefined)
 {
-    console.log("Usage: node liri <my-tweets or spotify-this-song or movie-this or do-what-it-says>"); 
+    console.log("Usage: node liri [my-tweets, spotify-this-song, movie-this, do-what-it-says]"); 
     return;
 }
 commandType = commandType.toLowerCase();
 console.log("Command: ", commandType);
-writeToLogFile("\nCommand: " + commandType);
 switch (commandType)
 {
     case "my-tweets":
@@ -29,7 +28,6 @@ switch (commandType)
         break;
     default:
         console.log("Unknown command");
-        writeToLogFile("\nUnknown command");
 }
 
 function procMyTweets()
@@ -57,8 +55,6 @@ function procMyTweets()
                 accessTokenSecret = listOfKeys[key];
                 break;
             default:
-            console.log("Unknown twitter key");
-            writeToLogFile("\nUnknown twitter key");
         } 
     }
 
@@ -76,25 +72,14 @@ function procMyTweets()
         if (err != null)
         {
             console.log("Error occurred: " + err);
-            writeToLogFile("\nError occurred: " + err);
         }
         else
         {
-            //console.log(tweets.length);
-            var cnt = 0;
+            console.log(tweets.length);
             for (var i = 0; i < tweets.length; i++)
             {
-                console.log("Tweet #" + (i+1) + ":");
-                writeToLogFile("\nTweet #" + (i+1) + ":");
-                var json = JSON.stringify(tweets[i]);
-                console.log(json);
-                writeToLogFile("\n");
-                writeToLogFile(json);
-                if (cnt++ < tweets.length-1)
-                {
-                    console.log("------------------------------------------------------------------------------");
-                    writeToLogFile("\n------------------------------------------------------------------------------");
-                }
+                console.log("Tweet #" + (i+1) + " ----------------------------------");
+                console.log(tweets[i]);
             }
         }
     });
@@ -119,7 +104,7 @@ function getSongName()
 
 function procSpotifyThisSong(songName)
 {
-    //console.log("songName:", songName);
+    console.log("songName:", songName);
     var spotify = new Spotify({
         id: "b4d661f43bbf4d29bd48dad950ce71f1",
         secret: "568cce130202406992dba602bc884dec" 
@@ -133,53 +118,72 @@ function procSpotifyThisSong(songName)
         if (err != null) 
         {
             console.log("Error occurred: " + err);
-            writeToLogFile("\nError occurred: " + err);
         }
         else
         {
-            //console.log(JSON.stringify(data, null, 2));
+            console.log(JSON.stringify(data, null, 2));
+            //get the name of each artist
             var items = data.tracks.items;
-            var artistSet = new Set(); //Set removes dups
-            //var albumNameSet = new Set();
-            //var previewUrlSet = new Set();
-            var cnt1 = 0;
+            var artistSet = new Set();
+            var albumNameSet = new Set();
+            var previewUrlSet = new Set();
             for(var i = 0; i < items.length; i++)
             {
                 var album = items[i].album;
-                console.log("Album #" + (i+1) + ": " + album.name);
-                writeToLogFile("\nAlbum #" + (i+1) + ": " + album.name);
-                console.log("  Song's name: ", items[i].name);
-                writeToLogFile("  \nSong's name: " + items[i].name);
+                albumNameSet.add(album.name);
                 if (items[i].preview_url != null)
                 {
-                    console.log("  Preview URL: " + items[i].preview_url);
-                    writeToLogFile("  \nPreview URL: " + items[i].preview_url);
+                    previewUrlSet.add(items[i].preview_url);
                 }
                 var artists = items[i].artists;
                 for (var j = 0; j < artists.length; j++)
                 {
-                    artistSet.add(artists[j].name);
-                }
-                //concatenate the name of each artist to string
-                //separted by a comma.
-                var cnt2 = 0;
-                var artistStr = "";
-                for (var v of artistSet)
-                {
-                    artistStr += v;
-                    if (cnt2++ < artistSet.size-1)
-                    {
-                       artistStr += ", ";
-                    }
-                }
-                console.log("  Artists: " + artistStr);
-                writeToLogFile("  \nArtists: " + artistStr);
-                if (cnt1++ < items.length-1)
-                {
-                    console.log("------------------------------------------------------------------------------");
-                    writeToLogFile("\n------------------------------------------------------------------------------");
+                    artistSet.add(artists[j].name)
                 }
             }
+            //concatenate the name of each artist to string
+            //separted by a comma.
+            var i = 0;
+            var artistStr = "";
+            for (var v of artistSet)
+            {
+                artistStr += v;
+                if (i++ < artistSet.size-1)
+                {
+                    artistStr += ", ";
+                }
+            }
+            console.log("\nArtists: ", artistStr);
+            console.log("The song's name: ", items[0].name );
+            //concatenate the preview url of each item to string
+            //separted by a comma.
+            i = 0;
+            var previewUrlStr = "";
+            for (var v of previewUrlSet)
+            {
+                previewUrlStr += v;
+                if (i++ < previewUrlSet.size-1)
+                {
+                    previewUrlStr += ", ";
+                }
+            }
+            if (previewUrlStr != "")
+            {
+                console.log("Preview URLs: ", previewUrlStr);
+            }
+            //concatenate the name of each album to string
+            //separted by a comma.
+            i = 0;
+            var albumNameStr = "";
+            for (var v of albumNameSet)
+            {
+                albumNameStr += v;
+                if (i++ < albumNameSet.size-1)
+                {
+                    albumNameStr += ", ";
+                }
+            }
+            console.log("Albums: ", albumNameStr);
         }
     });
 }
@@ -203,51 +207,39 @@ function getMovieName()
 
 function procMovieThis(movieName)
 {
-    //console.log("movieName:", movieName);
+    console.log("movieName:", movieName);
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + 
                    "&y=&plot=short&tomatoes=true&apikey=40e9cece";
     console.log(queryUrl);
-    writeToLogFile("\n" + queryUrl);
     request(queryUrl, function (err, response, body) {
         if (err != null)
         {
             console.log("Error occurred: " + err);
-            writeToLogFile("\nError occurred: " + err);
         }
         else
         {
             //console.log(body);
             if ((err === null) && (response.statusCode === 200))
             {
-                //console.log("JSON.stringify: ", JSON.stringify(body, null, 2));
                 var data = JSON.parse(body);
-                //console.log("Data after JSON.parse: ", data);
+                console.log("Data: ", data);
                 if (data.Year != undefined)
                 {
-                    console.log("Title: ", data.Title);
-                    writeToLogFile("\nTitle: " + data.Title);
+                    console.log("Title: ", data.Title); 
                     console.log("Year: ", data.Year); 
-                    writeToLogFile("\nYear: " + data.Year);
-                    console.log("IMDB Rating: ", data.imdbRating);
-                    writeToLogFile("\nIMDB Rating: " + data.imdbRating);
-                    console.log("Country: ", data.Country);
-                    writeToLogFile("\nCountry: " + data.Country);
-                    console.log("Language: ", data.Language);
-                    writeToLogFile("\nLanguage: " + data.Language);
-                    console.log("Plot: ", data.Plot);
-                    writeToLogFile("\nPlot: " + data.Plot);
-                    console.log("Actors: ", data.Actors);
-                    writeToLogFile("\nActors: " + data.Actors);
+                    console.log("IMDB Rating: ", data.imdbRating); 
+                    console.log("Country: ", data.Country); 
+                    console.log("Language: ", data.Language); 
+                    console.log("Plot: ", data.Plot); 
+                    console.log("Actors: ", data.Actors); 
                     if (data.tomatoURL != undefined)
                     {
-                        console.log("Rotten Tomatoes URL: ", data.tomatoURL);
-                        writeToLogFile("\nRotten Tomatoes URL: " + data.tomatoURL);
+                        console.log("Rotten Tomatoes URL: ", data.tomatoURL); 
                     }
                 }
                 else
                 {
                     console.log(data.Error);
-                    writeToLogFile("\n" + data.Error);
                 }
             }
         }
@@ -261,7 +253,6 @@ function procDoWhatItSays()
         if (err != null)
         {
             console.log("Error occurred: " + err);
-            writeToLogFile("\nError occurred: " + err);
         }
         else
         {
@@ -269,25 +260,5 @@ function procDoWhatItSays()
             var songName = dataArr[1];
             procSpotifyThisSong(songName);
         }
-    });
-}
-
-function writeToLogFile(data)
-{
-    // This block of code will create a file called "log.txt".
-    // It will then print string value passed to data in the file
-    fs.appendFile("log.txt", data, function(err) {
-
-        // If the code experiences any errors it will log the error to the console.
-        if (err != null) 
-        {
-            console.log("Error occurred: ", err);
-            writeToLogFile("\nError occurred: " + err);
-            return;
-        }
-
-        // Otherwise, it will print: "log.txt was updated!"
-        console.log("log.txt was updated!");
-    
     });
 }
