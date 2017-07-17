@@ -86,10 +86,19 @@ function procMyTweets()
             {
                 console.log("Tweet #" + (i+1) + ":");
                 writeToLogFile("\nTweet #" + (i+1) + ":");
-                var json = JSON.stringify(tweets[i]);
-                console.log(json);
-                writeToLogFile("\n");
-                writeToLogFile(json);
+                //var json = JSON.stringify(tweets[i]);
+                //console.log(tweets[i]);
+                var user = tweets[i].user;
+                console.log("Created at: " + tweets[i].created_at);
+                writeToLogFile("\nCreated at: " + tweets[i].created_at);
+                console.log("Text: " + tweets[i].text);
+                writeToLogFile("\nText: " + tweets[i].text);
+                console.log("User's description: " + user.description);
+                writeToLogFile("\nUser's description: " + user.description);
+                console.log("User's name: " + user.name);
+                writeToLogFile("\nUser's name: " + user.name);
+                console.log("User's location: " + user.location);
+                writeToLogFile("\nUser's location: " + user.location);
                 if (cnt++ < tweets.length-1)
                 {
                     console.log("------------------------------------------------------------------------------");
@@ -276,7 +285,7 @@ function writeToLogFile(data)
 {
     // This block of code will create a file called "log.txt".
     // It will then print string value passed to data in the file
-    fs.appendFile("log.txt", data, function(err) {
+    fs.appendFile("../log/log.txt", data, function(err) {
 
         // If the code experiences any errors it will log the error to the console.
         if (err != null) 

@@ -1,0 +1,229 @@
+
+Command: my-tweets
+Tweet #1:
+Created at: Mon Jul 17 13:47:26 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #2:
+Created at: Mon Jul 17 11:14:14 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #3:
+Created at: Sun Jul 16 08:51:32 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #4:
+Created at: Sat Jul 15 09:53:56 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #5:
+Created at: Fri Jul 14 13:43:41 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #6:
+Created at: Fri Jul 14 12:55:31 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #7:
+Created at: Fri Jul 14 08:07:28 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #8:
+Created at: Fri Jul 14 04:18:06 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #9:
+Created at: Thu Jul 13 20:19:20 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #10:
+Description: undefined
+Created at: Thu Jul 13 18:29:31 +0000 2017
+------------------------------------------------------------------------------
+Tweet #11:
+Created at: Thu Jul 13 08:06:29 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #12:
+Created at: Wed Jul 12 18:45:12 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #13:
+Created at: Wed Jul 12 17:15:27 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #14:
+Created at: Wed Jul 12 16:23:49 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #15:
+Created at: Wed Jul 12 16:19:12 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #16:
+Created at: Wed Jul 12 14:14:28 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #17:
+Created at: Tue Jul 11 10:09:54 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #18:
+Created at: Tue Jul 11 08:56:35 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #19:
+Created at: Tue Jul 11 08:35:38 +0000 2017
+Description: undefined
+------------------------------------------------------------------------------
+Tweet #20:
+Created at: Tue Jul 11 03:56:54 +0000 2017
+Description: undefined
+Command: my-tweets
+Tweet #1:
+Created at: Mon Jul 17 13:47:26 +0000 2017
+Text: Oh snap,
+
+I'm an official member of the @nodejs tsc
+
+https://t.co/wsgBKSpoDv
+User's description: Artist, musician, developer, and maker / @nodejs tsc + ctc member / developer advocate for @googlecloud / Opinions are potentially wrong, but definitely my own.
+User's name: Myles Borins
+User's location: New York, NY
+------------------------------------------------------------------------------
+Tweet #2:
+Created at: Mon Jul 17 11:14:14 +0000 2017
+Text: @nodejs Congrats to all the speakers #NodeInteractive
+User's description: Mobiloitte specializes in outsourced product & application development: Mobile, Web, Cloud, across BOTS, APPS, DIGITAL & IoT
+User's name: Mobiloitte
+User's location: Massachusetts, USA
+------------------------------------------------------------------------------
+Tweet #3:
+Created at: Sun Jul 16 08:51:32 +0000 2017
+Text: #nodejs #code&amp;learn #jsconfcn got my first contribution to nodejs. @nodejs @jsconfchina https://t.co/LFCUIenxLR
+User's description: Full Stack Programer at @udacity, JSConf China Organiser, https://t.co/UH99nyYTCW
+User's name: xeodou
+User's location: Shanghai
+------------------------------------------------------------------------------
+Tweet #4:
+Created at: Sat Jul 15 09:53:56 +0000 2017
+Text: . @nodejs Triage-athon 2017 Update! We're down to 950 open pull requests and issues. This is what I did instead of sleeping.
+User's description: I create software, rock operas, and pizzas. he/him
+User's name: Rich Trott
+User's location: San Francisco, CA
+------------------------------------------------------------------------------
+Tweet #5:
+Created at: Fri Jul 14 13:43:41 +0000 2017
+Text: Second Beta for @nodejs on #zOS now available. Read about this update to the IBM SDK for Node.js here: https://t.co/IuM39ZhPov.
+User's description: Node.js Runtime Tech Dev @ IBM, #nodejs collaborator and CTC member. Enjoys exploring tech and building apps to make daily life more fun! (tweets my own).
+User's name: Michael Dawson
+User's location: Ottawa, Ontario
+------------------------------------------------------------------------------
+Tweet #6:
+Created at: Fri Jul 14 12:55:31 +0000 2017
+Text: @nodejs I love the twitter page.
+User's description: I am CFO/Sr Account of SPK Consultants Inc. I have over 14 years experience with both bookkeeping and account, I have great consulting skills too..
+User's name: Melissa Santhapuri
+User's location: Sunnyvale, CA
+------------------------------------------------------------------------------
+Tweet #7:
+Created at: Fri Jul 14 08:07:28 +0000 2017
+Text: Super excited to be keynoting Node Interactive. See you all in Vancouver @nodejs https://t.co/GQdXSod3sV
+User's description: Ph.D software engineer working at Google on Chrome V8. Node.js CTC member. ❤️ JavaScript.
+User's name: Franziska Hinkelmann
+User's location: Munich, Germany
+------------------------------------------------------------------------------
+Tweet #8:
+Created at: Fri Jul 14 04:18:06 +0000 2017
+Text: I've been spending way to much hours tinkering with @nodejs ! - Thanks @planetoftheweb !
+User's description: World Traveler  | Information Security Architect | Student of innovation | Value Investor
+User's name: Trevon!
+User's location: Somewhere Hot and Sunny!
+------------------------------------------------------------------------------
+Tweet #9:
+Created at: Thu Jul 13 20:19:20 +0000 2017
+Text: I’m presenting at #OSSummit in LA on Sept 14. Join us with the following code for 20% off: OSS2SPK - https://t.co/JbeDB3uYFl
+User's description: Founder, reTHINKit PR; Co-founder Wicked Flicks. Helping tech clients redefine the future thru invention, innovation, inclusiveness. Producer women in tech doc.
+User's name: jennifercloer
+User's location: Portland, Oregon
+------------------------------------------------------------------------------
+Tweet #10:
+Created at: Thu Jul 13 18:29:31 +0000 2017
+Text: Thank you so much @nodejs for the RT on @NodeSummit scholarships... Had I not seen the tweet, none of this would be happening.
+User's description: Seeking an opportunity to enter the world of web dev. & gain professional working experience. Graduating from coding bootcamp on August 2017. GitHub@JaySeeCode
+User's name: Juan Carlos Gonzalez
+User's location: Charlotte, NC
+------------------------------------------------------------------------------
+Tweet #11:
+Created at: Thu Jul 13 08:06:29 +0000 2017
+Text: If you're wondering which feature of ES2015-2018 you can use with @nodejs,
+https://t.co/9DLyVgcyDt is so useful! 
+thank you @williamkapke !
+User's description: Pragmatic & Imaginative, #MobileApp Tech Lead, Husband, Father of 3 boys, Amateur Polyglot, Runner, #CanneDeCombat enthusiast. (Tweets & opinions are my own)
+User's name: David Lacourt👨🏼‍💻
+User's location: Senlis, France
+------------------------------------------------------------------------------
+Tweet #12:
+Created at: Wed Jul 12 18:45:12 +0000 2017
+Text: Excited to be giving one of the keynotes at Node.js Interactive. I'll be in great company! https://t.co/FOFzr9rqFY
+User's description: Node.js TSC Director; nearForm Open Source Architect; All around nice guy. #notmypresident
+User's name: James M Snell
+User's location: Fresno, CA
+------------------------------------------------------------------------------
+Tweet #13:
+Created at: Wed Jul 12 17:15:27 +0000 2017
+Text: Keynotes have been announced for #NodeInteractive. If you are using @nodejs , this is your event:… https://t.co/8fTERcumTS
+User's description: A nonprofit organization enabling mass innovation through open source. #Linux #opensource #learnLinux
+User's name: The Linux Foundation
+User's location: San Francisco, CA
+------------------------------------------------------------------------------
+Tweet #14:
+Created at: Wed Jul 12 16:23:49 +0000 2017
+Text: 🎉The initial keynotes for #NodeInteractive have been announced! https://t.co/10TnepYnLQ Hope to see you there in October!
+User's description: We help companies succeed with #nodejs to stay ahead of the competition https://t.co/acUVJKMfJK. Node.js monitoring: https://t.co/19CqCzONAJ @TraceAPM
+User's name: RisingStack
+User's location: US, EU
+------------------------------------------------------------------------------
+Tweet #15:
+Created at: Wed Jul 12 16:19:12 +0000 2017
+Text: @nodejs 👏 Congrats @jasnell @ohhoe @mrhinkle @addaleax @fhinkel !!! 🎉 I'll see you in Vancouver for #NodeInteractive! 🏔
+User's description: Lead Developer Evangelist - @StrongLoop/@IBM ⚡️ Lead Guitar Evangelist - @LeastBestBeast/#MustardTiger ⚡️ #Node #LoopBack #Punk ⚡️ Tweets are mine. DMs are open
+User's name: joe_sepi
+User's location: NYC/Peekskill, NY
+------------------------------------------------------------------------------
+Tweet #16:
+Created at: Wed Jul 12 14:14:28 +0000 2017
+Text: Super proud of this amazing @Inc article about the great AI/ML work we do at @ETechAdvisor https://t.co/IowxkyRRSk
+User's description: Maker of Improbable Things
+
+CTO at ETA\; Godfather of Nodebots; Creator of JSConf and RobotsConf.
+User's name: Chris Williams
+User's location: Reston, VA
+------------------------------------------------------------------------------
+Tweet #17:
+Created at: Tue Jul 11 10:09:54 +0000 2017
+Text: @nordicjs @MylesBorins @nodejs I want this mix tape
+User's description: queer / open source @thethinkmill
+User's name: ǝl͊ʎ̓̏ʞ̄ͧ s̒͑ǝ̇ɯ̃ɐ̐ſ
+User's location: Sydney
+------------------------------------------------------------------------------
+Tweet #18:
+Created at: Tue Jul 11 08:56:35 +0000 2017
+Text: Yay! @mylesborins, TC39 delegate and Google Developer Advocate for @nodejs will be speaking at Nordic.js.… https://t.co/bd0KyGrOh2
+User's description: Nordic.js is an international two-day JavaScript conference that will take place in September 7-8, 2017. By @jede, @javve & @martinaelm.
+User's name: Nordic.js
+User's location: Stockholm
+------------------------------------------------------------------------------
+Tweet #19:
+Created at: Tue Jul 11 08:35:38 +0000 2017
+Text: @felixrieseberg @electronjs Thanks to @nodejs. Javascript's broken into places nobody could imagine. It's definitel… https://t.co/cmN5YcU6qa
+User's description: A Software Engineer on a journey to being #WorldClass. #m4CHRIST. a #KingdomSeeker. a #FullTimeLearner. a #KVite. #iRepArsenal. an #iQuber. #SK #TR.
+User's name: Adélêye Olúwaségun
+User's location: Lagos, Nigeria
+------------------------------------------------------------------------------
+Tweet #20:
+Created at: Tue Jul 11 03:56:54 +0000 2017
+Text: @hmake1998 I’m about to start diving more into @nodejs myself. Good luck fam!
+User's description: #CustomerSuccess Manager @upcityinc // #SEO Pro // Full Stack Web Developer In Training // #Productivity Wizard // A Guy Who Perpetually Talks Too Much
+User's name: Jordan J Stella
+User's location: Chicago, IL
